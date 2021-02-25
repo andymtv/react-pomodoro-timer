@@ -1,0 +1,22 @@
+html {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background-color: rgb(2, 2, 2);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 96%;
+  width: 100%;
+  font-family: 'Black Ops One', cursive;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

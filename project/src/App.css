@@ -1,0 +1,39 @@
+.app {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app > h2 {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgb(44, 196, 90);
+}
+
+.timer {
+  font-size: 72px;
+  color:  rgb(50, 156, 82);
+}
+
+.buttons > button {
+  width: 5.5rem;
+  height: 3.5rem;
+  margin: 5px;
+  padding: 10px;
+  font-family: Helvetica;
+  font-size: 18px;
+  background-color: rgb(162, 255, 190);
+  color: rgb(0, 116, 58);
+  border: 1px solid rgb(0, 116, 58);
+  border-radius: 5px;
+}
+
+.buttons > button:active, button:focus, button:hover {
+  border: 1px solid rgb(4, 104, 119);
+  background-color: rgb(128, 215, 226);
+  color: rgb(0, 155, 175);
+  outline: none;
+}
