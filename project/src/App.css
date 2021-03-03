@@ -1,39 +1,75 @@
-.app {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-.app > h2 {
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  color: rgb(44, 196, 90);
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Major Mono Display', monospace;
+  line-height: 1.5;
+}
+
+.app {
+  min-height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ff8f5c;
+  color: #d64400;
+}
+
+h2 {
+  color: #b13800;
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
 }
 
 .timer {
-  font-size: 72px;
-  color:  rgb(50, 156, 82);
+  color: #d64400;
+  font-size: 150px;
+  margin-bottom: 20px;
 }
 
-.buttons > button {
-  width: 5.5rem;
-  height: 3.5rem;
-  margin: 5px;
-  padding: 10px;
-  font-family: Helvetica;
-  font-size: 18px;
-  background-color: rgb(162, 255, 190);
-  color: rgb(0, 116, 58);
-  border: 1px solid rgb(0, 116, 58);
-  border-radius: 5px;
-}
-
-.buttons > button:active, button:focus, button:hover {
-  border: 1px solid rgb(4, 104, 119);
-  background-color: rgb(128, 215, 226);
-  color: rgb(0, 155, 175);
+.buttons button {
   outline: none;
+  border: none;
+  font-size: 24px;
+  background: #fcc9a0;
+  color: #878b32;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.buttons button:hover {
+  border-radius: 10px;
+  background: #f5f8ca;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.buttons button:not(:last-child) {
+  margin-right: 10px;
+}
+
+@media (max-width: 780px) {
+  h2 {
+    font-size: 22px;
+  }
+
+  .timer {
+    font-size: 80px;
+  }
+
+  .buttons button {
+    font-size: 18px;
+  }
 }
